@@ -1,0 +1,15 @@
+{
+    "name": "antoine/observer",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@gmail.com"
+        }
+    ],
+    "require": {}
+}
