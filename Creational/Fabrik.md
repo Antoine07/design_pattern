@@ -96,6 +96,8 @@ echo $factory->createCircle();
 
 ## 01 Exercice de Factory FactoryPDO
 
+Faites une fabrique qui permet de créer un objet de type PDO.
+
 ```php
 class FactoryPDO
 {
