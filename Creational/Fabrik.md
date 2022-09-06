@@ -94,35 +94,12 @@ echo $factory->createSquare();
 echo $factory->createCircle();
 ```
 
-## Exemple de Factory FactoryPDO
+## 01 Exercice de Factory FactoryPDO
 
 ```php
 class FactoryPDO
 {
-    private static $pdo = null;
-
-    private static $defaults = [
-            \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-            \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
-        ];
-
-    public static function build(string $dsn, string $username, string $password):\PDO{
-
-        self::$pdo = new \PDO($dsn,
-            $username, $password,
-            self::$defaults
-        );
-
-        return self::$pdo;
-    }
-
-    public static function buildSqlite(string $dsn = 'sqlite::memory:' ):\PDO{
-          self::$pdo = new \PDO($dsn, self::$defaults);
-
-          return self::$pdo;
-    }
-
-    public static function reset():void{ self::$pdo = null ;}
+   // TODO
 }
 
 $pdo = FactoryPDO::build(
