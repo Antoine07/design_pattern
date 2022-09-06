@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"CartTest::testPushAndPop":0.009}}
+{"version":1,"defects":{"CartTest::testBuy":4,"CartTest::testException":3,"CartTest::testLogicException":3,"CartTest::testBuyTotalObservers":4,"CartTest::testBuyTotalObserverFile":3},"times":{"CartTest::testPushAndPop":0.013,"CartTest::testBuy":0.002,"CartTest::testException":0.001,"CartTest::testLogicException":0.002,"CartTest::testBuyTotalObservers":0.001,"CartTest::testBuyTotalObserverSum":0.001,"CartTest::testBuyTotalObserverFile":0.001}}
