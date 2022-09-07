@@ -1,0 +1,17 @@
+prices:
+  cone:
+    classic: '%env(APP_CLASSIC)%'
+    small: '%env(APP_SMALL)%'
+    big: '%env(APP_BIG)%'
+
+  boule:
+    1: '%env(APP_BOULE_ONE)%'
+    2: '%env(APP_BOULE_TWO)%'
+    3: '%env(APP_BOULE_TREE)%'
+    4: '%env(APP_BOULE_FOUR)%'
+
+  extrat:
+    chocolate: '%env(APP_CHOCOLATE)%'
+    strawberry: '%env(APP_STRAWBERRY)%'
+    caramel: '%env(APP_CARAMEL)%'
+    speculos: '%env(APP_SPECULOS)%'
