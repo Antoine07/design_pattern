@@ -11,8 +11,9 @@ class IceCream implements Salable
     private string $cone;
     private array $iceBoules = [];
     private array $extras = [];
-    private float $price;
-    private  string $conePrice;
+    private float $price = 0.0;
+
+    private  array $conePrices;
     private  array $iceBoulePrice;
     private  array $extraPrices;
 
@@ -23,17 +24,20 @@ class IceCream implements Salable
 
     public function setPrices(): void
     {
-        $prices = Yaml::parseFile(__DIR__ . $_ENV['APP_PRICES']);
+        $this->prices = Yaml::parseFile(__DIR__ . $_ENV['APP_FILE_PRICES'])['prices'];
+        $this->conePrices = $this->prices['cone'];
+        $this->iceBoulePrice = $this->prices['boule'];
+        $this->extraPrices = $this->prices['extra'];
     }
 
     public function addPrice(float $price): void
     {
         $this->price += $price;
     }
-    public function getPrice(array $products, string $key): float
+    public function getPrice(string $name, string $key): float
     {
 
-        return $products[$key];
+        return $this->prices[$name][$key];
     }
 
 
@@ -41,7 +45,7 @@ class IceCream implements Salable
     {
         $this->cone =  $cone;
 
-        $this->addPrice($this->conePrice[$cone]);
+        $this->addPrice($this->conePrices[$cone]);
     }
 
     public function choiceBoule(string $flavour): void

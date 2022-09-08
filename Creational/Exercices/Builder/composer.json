@@ -2,7 +2,7 @@
     "name": "antoine/builder",
     "autoload": {
         "psr-4": {
-            "Antoine\\Builder\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
