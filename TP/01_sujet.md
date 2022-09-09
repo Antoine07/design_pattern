@@ -150,7 +150,7 @@ $_POST['_method'] = 'DELETE';
 
 ### Model
 
-Libre à vous d'implémenter le modèle sque vous souhaitez.
+Libre à vous d'implémenter le modèle que vous souhaitez, cela peut être simplement PDO.
 
 ```php
 
@@ -165,6 +165,10 @@ $posts = $Post->all();
 
 ### Template
 
+Soit vous faire votre propre classe (plus compliqué) soit vous utilisez Twig (**recommandé**) dans votre Framework View.
+
+
+Si vous souhaitez mettre en place votre propre système de templating suivez les recommandations suivantes.
 
 #### Defining a layout
 
@@ -222,4 +226,15 @@ $this->view->setRender('layouts.partials.header', []);
 @endif
 
 ```
+
+
+## Pour servir (HTTP) les pages MVC
+
+Utilisez un Dispatcher il connectera la route à l'action & au contrôleur.
+
+
+Vous pouvez vous inspirer du Dispatcher suivant 
+
+[dispatcher)(https://github.com/Antoine07/myFramework/blob/master/src/Services/Dispatcher.php)
+
 
