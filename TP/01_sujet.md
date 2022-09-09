@@ -2,7 +2,23 @@
 
 Documentation, le framework utilisera la notion de Container.
 
-Par équipe de 2/3 vous implémentez le code d'un framework MVC.
+Ce travail se fera par équipe de 2/2.
+
+Vous devez expliciter votre démarche pour construire votre Framework.
+
+- Choix des techniques retenues, par exemple Twig pour le templating
+
+- Disptacher pour servir les réponses au client.
+
+... 
+
+Essayez de bugeter le temps que cela vous prendrais pour tout réaliser. 
+
+Passez à l'implémentation de votre idée.
+
+Construisez une campagne de tests (unitaires) qui validera votre approche. Planifiez cette campagne dans votre readme.md
+
+Documentez votre Framework pour qu'un développeur qui choisit votre solution technique, puisse l'utiliser.
 
 Vous pouvez vous inspirer du Framework SF ou de celui de votre formateur :
 
